@@ -1,5 +1,12 @@
 # calculator.py
 
+import math
+
+def sqrt(a):
+    if a < 0:
+        return "Error: negative input"
+    return math.sqrt(a)
+
 def power(a, b):
     return a ** b
 
@@ -21,6 +28,7 @@ def main():
     print("Welcome to the calculator")
     print("2 + 3 =", add(2, 3))
     print("5 - 2 =", subtract(5, 2))
+    print("sqrt(16) =", sqrt(16))
     print("2 ^ 3 =", power(2, 3))
     print("10 / 2 =", divide(10, 2))
     print("3 * 4 =", multiply(3, 4))
